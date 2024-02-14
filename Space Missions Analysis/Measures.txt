@@ -1,0 +1,33 @@
+/* ALL Measures used for visualization in PowerBI */
+
+--/* Total Missions */
+
+Total Missions = COUNT('Space Missions'[Mission])
+
+--/* Total Successful Missions */
+
+Total Successfull mission = CALCULATE(COUNT('Space Missions'[Mission]),'Space Missions'[MissionStatus]="Success")
+
+--/* Total Partial Failure Missions */
+
+Total Partial Failure Missions = CALCULATE( COUNT('Space Missions'[Mission]),'Space Missions'[MissionStatus]="Partial Failure")
+
+--/* Total Prelaunch Failure Missions */
+
+Total Prelaunch Failure Missions = CALCULATE( COUNT('Space Missions'[Mission]),'Space Missions'[MissionStatus]="Prelaunch Failure")
+
+--/* Total Failure Missions */
+
+Total Failure Missions = CALCULATE( COUNT('Space Missions'[Mission]),'Space Missions'[MissionStatus]="Failure")
+
+--/* Total Price */
+
+Total Price = sum('Space Missions'[Price])
+
+--/* Success Rate */
+
+Success Rate = DIVIDE([Total Successfull mission],[Total Missions])
+
+--/* Slicer for enabling categorical filtering */
+
+Slicer = 1

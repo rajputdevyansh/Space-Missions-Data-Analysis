@@ -1,0 +1,24 @@
+/* ALL transformation is done in Excel */
+
+--/* Created Country Column */
+
+Using Text to Column in excel.
+
+
+/* ALL transformation is done in PowerBI PowerQuery */
+
+--/* Changed Types */
+
+= Table.TransformColumnTypes(#"Promoted Headers",{{"Company", type text}, {"Country", type text}, {"Location", type text}, {"Date", type date}, {"Time", type time}, {"Rocket", type text}, {"Mission", type text}, {"RocketStatus", type text}, {"Price", Currency.Type}, {"MissionStatus", type text}})
+
+--/* Multiplied Price Column */
+
+= Table.TransformColumns(#"Changed Type", {{"Price", each _ * 1000000, Currency.Type}})
+
+--/* Renamed Column */
+
+= Table.RenameColumns(#"Multiplied Column",{{"Company", "Organization"}})
+
+--/* Date Table */
+
+Date Table = ADDCOLUMNS(CALENDAR(MIN('Space Missions'[Date]),MAX('Space Missions'[Date])), "Year",YEAR([Date]), "Month",FORMAT([Date],"mmm"),"Month No",MONTH([Date]))
