@@ -1,5 +1,5 @@
 
-# Sales Insights Data Analysis FMCG Industry
+# Space Missions Analysis
 
 
 ## View the project
@@ -7,7 +7,7 @@
 [Live Preview](https://www.devyanshrajput.live/Space_Missions_Dashboard.html)
 ## Screenshots
 
-### Atliq Hardware Insights Dashboard
+### Space Missions Analysis Dashboard
 
 ![App Screenshot](https://github.com/rajputdevyansh/Space-Missions-Data-Analysis/blob/main/Space%20Missions%20Analysis/Demos/Dashboard.png?raw=true )
 
@@ -25,6 +25,12 @@
 - Which countries have had the most successful space missions? Has it always been that way?
 - Which rocket has been used for the most space missions? Is it still active?
 - Are there any patterns you can notice with the launch locations?
+
+### Dataset
+
+- Source: Next Spaceflight
+- License: Public Domain
+- Downloaded from https://www.mavenanalytics.io/data-playground
 
 ### Results: Insights
 
