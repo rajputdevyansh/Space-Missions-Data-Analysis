@@ -9,7 +9,7 @@
 
 ### Atliq Hardware Insights Dashboard
 
-![App Screenshot](https://github.com/rajputdevyansh/Sales-Insights-FMCG-Industry/blob/main/Sales_Insights_Data_Analysis/Demos/Atliq_Hardware_Insights_Dashboard.png?raw=true )
+![App Screenshot](https://github.com/rajputdevyansh/Space-Missions-Data-Analysis/blob/main/Space%20Missions%20Analysis/Demos/Dashboard.png?raw=true )
 
 
 ## 🛠 Skills
